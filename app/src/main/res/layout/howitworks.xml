@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg25"
+    android:backgroundTint="@color/white"
+    android:backgroundTintMode="multiply"
+    tools:context="com.smsnotif.doorbellsms.GalleryFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#CDFFFFFF"
+            android:fontFamily="@font/aquirebold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="ANDROID BASED DOORBELL WITH SMS SUPPORT"
+            android:textColor="#0E5A53"
+            android:textSize="22sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@id/title_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="#D7FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:text="Project Manual"
+            android:textColor="#0E5A53"
+            android:textSize="22sp" />
+
+
+        <ImageView
+            android:id="@+id/model"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/title_t2"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rpi" />
+
+        <TextView
+            android:id="@+id/rpi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/model"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-20dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text="Raspberry pi 4"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/rp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rpi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text="The Project is based on raspberry 4 it has its own operating system."
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/charger"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/rp2"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/charger" />
+
+        <TextView
+            android:id="@+id/rpi3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/charger"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-20dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text="Raspberry pi power supply"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/rp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rpi3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text=" This is the raspberry pi power supply and also serve as the power supply of our doorbell"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/rp3"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/camera" />
+
+        <TextView
+            android:id="@+id/rpi4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text="Raspberry pi camera v2"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/rp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rpi4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text=" This is the raspberry pi camera which serve as the security cam of then doorbell "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/servo"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/rp4"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:src="@drawable/servo" />
+
+        <TextView
+            android:id="@+id/rpi5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/servo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:text="Servo Motor"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/rp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rpi5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text=" This is a servo motor which device that used to lock and unlock the door"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/push"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/rp5"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/push" />
+
+        <TextView
+            android:id="@+id/rpi6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/push"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text="push button"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/rp6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rpi6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text=" This is a push button once you push this the doorbell will send email and sms to home owner"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/gsmmodule"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/rp6"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/gsm" />
+        <TextView
+            android:id="@+id/rpi7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gsmmodule"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text="GSM MODULE"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/rp7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rpi7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text="We use USB GSM 800c v2 module to send text messages for the doorbell sms notification"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/finalbuild"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/rp7"
+            android:layout_centerHorizontal="true"
+            android:background="#C6FFFFFF"
+            android:src="@drawable/finalbuild" />
+
+        <TextView
+            android:id="@+id/rpi8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/finalbuild"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text="Prototype of the Smart doorbell"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/rp8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rpi8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text=" This is the prototype of smart doorbell all you have to do is to plugin using the power supply find your best doorbell position register to this app to setup your phone number and notification messsage once the registration is finish, the doorbell is ready,then once the button is pressed it will automatically sens sms and email and the camera will automatically stream live"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rpi9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rp8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="#A9FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:padding="10dp"
+            android:text="Thankyou!"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

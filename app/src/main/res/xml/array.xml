@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "sound_list">
+        <item>Home Standard</item>
+        <item>Elevator</item>
+        <item>Chirstmas</item>
+        <item>Quick</item>
+    </string-array>
+</resources>

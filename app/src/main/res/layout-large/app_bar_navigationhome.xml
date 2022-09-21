@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smsnotif.doorbellsms.Navigationhome">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#085E5D"
+            android:textAlignment="center"
+            app:popupTheme="@style/Theme.AppCompat"
+            app:titleTextColor="#DBF4EF" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/content_navigationhome" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="bottom"
+        android:layout_height="50dp"
+        android:backgroundTint="#006E63"
+        android:layout_width="230dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/goback"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="bottom|center"
+        android:layout_height="50dp"
+        android:backgroundTint="#006E63"
+        android:layout_width="220dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/reboot"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/reb"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+
+        android:layout_gravity="bottom|end"
+        android:layout_height="50dp"
+        android:backgroundTint="#006E63"
+        android:layout_width="230dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/profiles"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/homeprofile"/>
+
+    </androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smsnotif.doorbellsms.LogoutFragment"
+    android:background="@drawable/bg25">
+    <TextView
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:fontFamily="@font/aquirebold"
+        android:text="ANDROID BASED DOORBELL WITH SMS SUPPORT"
+        android:textColor="#0E5A53"
+        android:textSize="22sp" />
+    <TextView
+        android:id="@id/title_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/antoniobold"
+        android:text="Sign Out"
+        android:textColor="#0E5A53"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/text_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/antoniobold"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:text="@string/do_you_wish_to_continue_signing_out"
+        android:textAlignment="center"
+        android:textColor="#0E5A53"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/text_logout"
+        android:layout_toEndOf="@+id/yes"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="#0E5A53"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/antoniobold"
+        android:text="NO"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/text_logout"
+        android:layout_marginTop="30dp"
+        android:background="#0E5A53"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="70dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/antoniobold"
+        android:text="YES"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        >
+
+    </Button>
+</RelativeLayout>

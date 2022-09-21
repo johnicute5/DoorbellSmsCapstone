@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg25"
+    tools:context="com.smsnotif.doorbellsms.GalleryFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:fontFamily="@font/aquirebold"
+            android:text="ANDROID BASED DOORBELL WITH SMS SUPPORT"
+            android:textColor="#0E5A53"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@id/title_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/antoniobold"
+            android:text="Setup Your Doorbell"
+            android:textColor="#0E5A53"
+            android:textSize="22sp" />
+
+
+        <EditText
+            android:id="@+id/dbmodel"
+            android:layout_width="306dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/title_t2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="46dp"
+            android:autofillHints=""
+            android:background="#D6FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:hint="Doorbell Model"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#F5000000" />
+
+        <EditText
+            android:id="@+id/dbname"
+            android:layout_width="309dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/dbmodel"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="46dp"
+            android:fontFamily="@font/antoniobold"
+            android:background="#D6FFFFFF"
+            android:backgroundTint="#FFFFFF"
+
+            android:hint="Doorbell Name"
+            android:textColor="#000000"
+            android:textColorHint="#ED000000" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countrycode"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/dbname"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="31dp"
+            app:ccpDialog_backgroundColor="@color/white"
+            android:background="#CEFFFFFF"
+            android:gravity="center"
+            app:ccp_textSize="14sp"
+
+            >
+
+        </com.hbb20.CountryCodePicker>
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="314dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/dbname"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="46dp"
+            android:keyboardNavigationCluster="true"
+            android:layout_toRightOf="@id/countrycode"
+            android:background="#D6FFFFFF"
+            android:backgroundTint="#F0FFFFFF"
+
+            android:fontFamily="@font/antoniobold"
+            android:hint="Phone Number"
+            android:textColor="#000000"
+            android:textColorHint="#F3000000" />
+
+        <EditText
+            android:id="@+id/notifmessage"
+            android:layout_width="314dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/phonenumber"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="46dp"
+            android:background="#D6FFFFFF"
+            android:backgroundTint="#F0FFFFFF"
+
+            android:fontFamily="@font/antoniobold"
+            android:hint="Notification Message"
+            android:textColor="#000000"
+            android:textColorHint="#F3000000" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="187dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/notifmessage"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="@font/antoniobold"
+            android:text="Register"
+            android:textSize="20sp"
+            app:backgroundTint="#0E5A53"
+            tools:textColor="#ffffff" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smsnotif.doorbellsms.qrcodescanner"
+    android:background="@drawable/bg25">
+    <TextView
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:fontFamily="@font/aquirebold"
+        android:text="ANDROID BASED DOORBELL WITH SMS SUPPORT"
+        android:textColor="#0E5A53"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@id/title_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/antoniobold"
+        android:text="Sign Up"
+        android:textColor="#0E5A53"
+        android:textSize="22sp" />
+
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_t2"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/asleep"
+        android:text="Select a device"
+        android:textAlignment="center"
+        android:textColor="#0E5A53"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/device1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/antoniobold"
+        android:layout_marginEnd="80dp"
+        android:background="#0E5A53"
+        android:text="Smart Doorbell" />
+
+    <Button
+        android:id="@+id/device2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/device1"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/antoniobold"
+        android:background="#0E5A53"
+        android:text="Ordinary Doorbell" />
+
+
+    <ImageView
+        android:id="@+id/img_scanner"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/scanner"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/scan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/img_scanner"
+
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/asleep"
+        android:layout_centerHorizontal="true"
+        android:text="Try to Scan"
+        android:textAlignment="center"
+        android:textColor="#0E5A53"
+        android:textSize="30sp" />
+
+</RelativeLayout>

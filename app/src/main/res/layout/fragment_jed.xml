@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg25"
+    tools:context="com.smsnotif.doorbellsms.jandrei">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/aquirebold"
+                android:text="ANDROID BASED DOORBELL WITH SMS SUPPORT"
+                android:textColor="#0E5A53"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@id/title_t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/antoniobold"
+                android:text="Developer's Profile"
+                android:textColor="#0E5A53"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+        <!--this mis menu-->
+        <GridLayout
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:padding="5dp"
+            android:rowCount="1"
+            android:elevation="15dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#C9FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#006E63"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/devimg1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/jandrei"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/antoniobold"
+                        android:text="JED JANDREI SOSONG JASARENO"
+                        android:textColor="#F0FFFE"
+                        android:textSize="22sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/antoniobold"
+                        android:text="ADDRESS:Barangay San Juan Santa Cruz, laguna"
+                        android:textColor="#F0FFFE"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:fontFamily="@font/antoniobold"
+                        android:text="BIRTH DATE: November 10, 1999   AGE:22"
+                        android:textColor="#F0FFFE"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="0dp"
+                        android:fontFamily="@font/antoniobold"
+                        android:textAlignment="center"
+                        android:text="PROGRAM:Bachelor of Science in Information Technology"
+                        android:textColor="#F0FFFE"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/antoniobold"
+                        android:text="SCHOOL: Laguna University"
+                        android:textColor="#F0FFFE"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="20dp"/>
+                    <Button
+                        android:id="@+id/btnback"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/account"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="100dp"
+                        android:fontFamily="@font/antoniobold"
+                        android:text="Colleagues"
+                        android:textColor="#0E5A53"
+                        android:textSize="17sp"
+                        app:backgroundTint="#F0FFFE" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+
+
+</ScrollView>

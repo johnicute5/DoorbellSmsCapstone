@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.doorbellsms"
+    android:versionCode="1"
+    android:versionName="1.0"> 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name="com.smsnotif.doorbellsms.app"
+        android:allowBackup="true"
+        android:icon="@mipmap/applogofore"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Design.NoActionBar"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name="com.smsnotif.doorbellsms.Navigationhome" />
+        <activity android:name="com.smsnotif.doorbellsms.Login" />
+        <activity android:name="com.smsnotif.doorbellsms.howitworks" />
+        <activity android:name="com.smsnotif.doorbellsms.MainActivity" />
+        <activity android:name="com.smsnotif.doorbellsms.homepage" />
+        <activity android:name="com.smsnotif.doorbellsms.doorbell"
+            tools:ignore="Instantiatable" />
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity
+            android:name="com.smsnotif.doorbellsms.splashscreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.smsnotif.doorbellsms.capture"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:parentActivityName="com.smsnotif.doorbellsms.qrcodescanner"
+
+            />
+
+    </application>
+    <meta-data
+        android:name="com.parse.SERVER_URL"
+        android:value="@string/back4app_server_url" />
+    <meta-data
+        android:name="com.parse.APPLICATION_ID"
+        android:value="@string/back4app_app_id" />
+    <meta-data
+        android:name="com.parse.CLIENT_KEY"
+        android:value="@string/back4app_client_key" />
+
+</manifest>

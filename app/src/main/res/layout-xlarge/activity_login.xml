@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg25"
+    android:backgroundTintMode="multiply"
+    android:backgroundTint="@color/white"
+    android:padding="10dp"
+    tools:context="com.smsnotif.doorbellsms.Login">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="#F5FFFFFF"
+            android:fontFamily="@font/aquirebold"
+            android:text="ANDROID BASED DOORBELL WITH SMS SUPPORT"
+            android:textColor="#0E5A53"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@id/title_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/antoniobold"
+            android:text="Sign In"
+            android:background="#F5FFFFFF"
+            android:textColor="#0E5A53"
+            android:textSize="30sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username1"
+            android:labelFor="@+id/username"
+            android:layout_width="380dp"
+            android:layout_height="62dp"
+            android:layout_below="@+id/title_t2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#C9FFFFFF"
+            android:textColorHint="#131313"
+            app:hintTextColor="@color/black"
+            android:hint="@string/username"
+            >
+
+            <EditText
+                android:id="@+id/username11"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="#FFFFFF"
+                android:textSize="20sp"
+                android:labelFor="@+id/password11"
+                android:textColor="#000000"
+                android:textColorHint="#E6000000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password1"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/username1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#D0FFFFFF"
+            android:hint="@string/password"
+            android:textColorHint="#131313"
+            app:hintTextColor="@color/black"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#1B645D">
+
+            <EditText
+                android:id="@+id/password11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:ems="5"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:labelFor="@+id/password111"
+                android:textColor="#000000"
+                android:textColorHint="#1B1919"
+                android:textSize="20sp">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btnsignin1"
+            android:layout_width="187dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/password1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/antoniobold"
+            android:text="LOGIN"
+
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:backgroundTint="#0E5A53" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/btnsignin1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#F5FFFFFF"
+            android:fontFamily="@font/antoniobold"
+            android:text="DOESN'T HAVE AN ACCOUNT?"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#0E5A53"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnsignup1"
+            android:layout_width="187dp"
+            android:layout_height="65dp"
+            android:gravity="center"
+
+            android:layout_below="@+id/account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/antoniobold"
+            android:text="REGISTER"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            app:backgroundTint="#0E5A53" />
+    </RelativeLayout>
+
+
+
+</ScrollView>

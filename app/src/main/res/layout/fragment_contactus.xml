@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smsnotif.doorbellsms.contactUs"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg25">
+
+    <TextView
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/aquirebold"
+        android:text="ANDROID BASED DOORBELL"
+        android:textColor="#0E5A53"
+        android:textSize="22sp" />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:fontFamily="@font/aquirebold"
+        android:layout_centerHorizontal="true"
+        android:text="WITH SMS SUPPORT"
+        android:textColor="#0E5A53"
+        android:textSize="22sp" />
+    <TextView
+
+        android:id="@id/title_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/antoniobold"
+        android:text="Contact Us"
+        android:textColor="#0E5A53"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/menu1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/location"
+        android:layout_below="@+id/title_t2"
+        android:layout_marginTop="40dp"
+
+        />
+
+    <TextView
+        android:id="@+id/laguna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_t2"
+        android:layout_alignBaseline="@+id/menu1"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/menu1"
+        android:background="#CDFFFFFF"
+        android:layout_toEndOf="@+id/menu1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/antoniobold"
+        android:text="Brgy. Bubukal, Santa Cruz, Laguna"
+        android:textColor="#0E5A53"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/menuemail"
+        android:layout_width="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/email"
+        android:layout_below="@+id/menu1"
+        android:layout_marginTop="40dp"
+
+        />
+
+    <TextView
+        android:id="@+id/dingdong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#CDFFFFFF"
+        android:fontFamily="@font/antoniobold"
+        android:text="rjjmringrangdoorbell@gmail.com"
+        android:textColor="#0E5A53"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/laguna"
+        android:layout_alignBaseline="@+id/menuemail"
+        android:layout_toRightOf="@+id/menuemail"
+        android:layout_toEndOf="@+id/menuemail"
+        android:textSize="22sp" />
+    <ImageView
+        android:id="@+id/menum"
+        android:layout_width="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/phonenum"
+        android:layout_below="@+id/menuemail"
+        android:layout_marginTop="40dp"
+
+        />
+
+    <TextView
+        android:id="@+id/dingdongnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#CDFFFFFF"
+        android:fontFamily="@font/antoniobold"
+        android:text="09122839251"
+        android:textColor="#0E5A53"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/dingdong"
+        android:layout_alignBaseline="@+id/menum"
+        android:layout_toEndOf="@+id/menum"
+        android:textSize="22sp" />
+    <TextView
+
+       android:id="@+id/connected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dingdongnum"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/antoniobold"
+        android:text="Stay Connected With Us"
+        android:textColor="#0E5A53"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/emailconn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/connected"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gmail"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/fbconn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/connected"
+        android:layout_alignBaseline="@+id/emailconn"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/emailconn"
+        android:src="@drawable/fb" />
+    <ImageView
+        android:id="@+id/ytconn"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="-5dp"
+        android:layout_below="@+id/connected"
+        android:layout_alignBaseline="@+id/emailconn"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/fbconn"
+        android:src="@drawable/yt" />
+    <ImageView
+        android:id="@+id/igconn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-5dp"
+        android:layout_below="@+id/connected"
+        android:layout_alignBaseline="@+id/emailconn"
+
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/ytconn"
+        android:src="@drawable/ig" />
+    <ImageView
+        android:id="@+id/twitconn"
+        android:layout_width="80dp"
+        android:layout_marginStart="-5dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/connected"
+        android:layout_alignBaseline="@+id/emailconn"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/igconn"
+        android:src="@drawable/twit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ytconn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#99FFFFFF"
+        android:fontFamily="@font/antoniobold"
+        android:text="© 2022 All rights reserved."
+        android:textColor="#0E5A53"
+        android:textSize="13sp"
+        tools:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+</RelativeLayout>

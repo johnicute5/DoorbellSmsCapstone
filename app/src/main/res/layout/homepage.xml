@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg25"
+    android:backgroundTintMode="multiply"
+    android:backgroundTint="@color/white"
+    tools:context="com.smsnotif.doorbellsms.nico">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/title"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"
+                android:background="#0E5A53"
+                android:fontFamily="@font/aquirebold"
+                android:text="ANDROID BASED DOORBELL WITH SMS SUPPORT"
+                android:textColor="#EEFDFC"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:id="@+id/home"
+                android:src="@drawable/home"
+                android:layout_width="match_parent"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_height="320dp"
+                >
+            </ImageView>
+
+            <Button
+                android:id="@+id/howtouse"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/home"
+                android:layout_centerHorizontal="true"
+                android:background="#DBFFFFFF"
+                android:fontFamily="@font/antoniobold"
+                android:layout_marginTop="10dp"
+                android:text="How it works?"
+                android:textColor="#0E5A53"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/singinto"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/howtouse"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#DCFFFFFF"
+                android:fontFamily="@font/antoniobold"
+                android:text="Sign Up"
+                android:gravity="center"
+                android:textColor="#0E5A53"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/loginto"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/singinto"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#E0FFFFFF"
+                android:fontFamily="@font/antoniobold"
+                android:text="Sign In"
+                android:textColor="#0E5A53"
+                android:textSize="22sp" />
+
+
+        </RelativeLayout>
+        <!--this mis menu-->
+
+    </LinearLayout>
+
+
+</ScrollView>

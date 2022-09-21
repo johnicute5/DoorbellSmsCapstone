@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.smsnotif.doorbellsms.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="SMS DOORBELL"
+        />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.smsnotif.doorbellsms.GalleryFragment"
+        tools:layout="@layout/fragment_gallery"
+        android:label="SMS DOORDELL"
+        />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.smsnotif.doorbellsms.userdetails"
+        tools:layout="@layout/userprofile"
+        android:label="SMS DOORBELL"
+        />
+
+    <fragment
+        android:id="@+id/navlogout"
+        android:name="com.smsnotif.doorbellsms.LogoutFragment"
+        tools:layout="@layout/fragment_logout"
+        android:label="SMS DOORBELL"/>
+    <fragment
+        android:id="@+id/nav_aboutus"
+        android:name="com.smsnotif.doorbellsms.aboutUs"
+        tools:layout="@layout/fragment_aboutus"
+        android:label="SMS DOORBELL"/>
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.smsnotif.doorbellsms.contactUs"
+        tools:layout="@layout/fragment_contactus"
+        android:label="SMS DOORBELL"/>
+    <fragment
+        android:id="@+id/share"
+        android:name="com.smsnotif.doorbellsms.share"
+        tools:layout="@layout/fragment_share"
+        android:label="SMS DOORBELL"/>
+</navigation>

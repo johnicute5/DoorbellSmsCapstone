@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.smsnotif.doorbellsms.aboutUs"
+    android:background="@drawable/bg25">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:fontFamily="@font/aquirebold"
+            android:text="ANDROID BASED DOORBELL WITH SMS SUPPORT"
+            android:textColor="#0E5A53"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/antoniobold"
+            android:text="About Us"
+            android:textColor="#0E5A53"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/context"
+            android:textColor="#0E5A53"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:textSize="21sp"
+            android:layout_marginRight="50dp"
+            android:background="#E4FFFFFF"
+            android:fontFamily="@font/goldleaf"
+            android:text="Doorbell Notification Application Having SMS Support Using Android"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/context2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/context"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#E4FFFFFF"
+            android:fontFamily="@font/asleep"
+            android:padding="10dp"
+            android:text="The capstone project entitled “Doorbell Notification App that Supports SMS Using Android” will allow homeowners to receive alerts when a visitor is at the door. The application will have an SMS feature sent to homeowners for them to be aware that someone is trying to access their house."
+            android:textAlignment="inherit"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/technical"
+            android:textColor="#0E5A53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/context2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:textSize="21sp"
+            android:layout_marginRight="79dp"
+            android:background="#E4FFFFFF"
+            android:fontFamily="@font/goldleaf"
+            android:text="Technical Background"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/context3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/technical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#E4FFFFFF"
+            android:fontFamily="@font/asleep"
+            android:padding="10dp"
+            android:text="The researchers will develop an application that also SMS featureS sent to homeowners for them to be aware that someone is trying to access their house. The owner will either grant or deny access to the guest."
+            android:textAlignment="inherit"
+            android:textColor="#000"
+            android:textSize="22sp" />
+        <Button
+            android:id="@+id/developer"
+            android:layout_width="187dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/context3"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/antoniobold"
+            android:text="Developer's Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:backgroundTint="#0E5A53" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

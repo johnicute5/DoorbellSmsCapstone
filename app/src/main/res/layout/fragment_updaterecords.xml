@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.smsnotif.doorbellsms.UpdateActivity"
+    android:background="@drawable/bg25">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/aquirebold"
+        android:text="ANDROID BASED DOORBELL WITH SMS SUPPORT"
+        android:textColor="#0E5A53"
+        android:textSize="22sp" />
+    <TextView
+        android:id="@id/title_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/antoniobold"
+        android:text="Update Doorbell"
+        android:textColor="#0E5A53"
+        android:textSize="22sp" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textColor="#000"
+        android:background="#fff"
+        android:fontFamily="@font/antoniobold"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:ems="10"
+        android:layout_below="@+id/title_t2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editdbmodel" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textColor="#000"
+        android:background="#fff"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/antoniobold"
+        android:gravity="center"
+        android:ems="10"
+        android:layout_below="@+id/editdbmodel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editdbname"
+        android:autofillHints="" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textColor="#000"
+        android:background="#fff"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/antoniobold"
+        android:gravity="center"
+        android:ems="10"
+        android:layout_below="@+id/editdbname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editphone" />
+    <EditText
+        android:id="@+id/edit_textmessage"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:textColor="#000"
+        android:background="#fff"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/antoniobold"
+        android:gravity="center"
+        android:ems="10"
+        android:layout_below="@+id/editphone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+         />
+
+    <Button
+        android:text="Update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edit_textmessage"
+        android:fontFamily="@font/antoniobold"
+        android:id="@+id/UpdateButton"
+        android:textSize="22sp"
+        android:background="#0E5A53"/>
+    </RelativeLayout>
+</ScrollView>
